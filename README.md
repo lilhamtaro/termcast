@@ -8,7 +8,7 @@ Termcast utilizes Teloxide for Telegram API interactions. In addition to the def
 
 Example .env
 ```
-TELOXIDE_BOT=your_bot_api_key
+TELOXIDE_TOKEN=your_bot_api_key
 CHANNEL=your_default_channel_id
 ```
 
