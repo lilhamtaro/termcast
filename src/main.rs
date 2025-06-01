@@ -41,7 +41,7 @@ async fn main() {
     // Determine if it's a file path or message
     if std::path::Path::new(&content).exists() {
         let file = InputFile::file(content.clone());
-        if let Err(err) = bot.send_document(target.clone(), file).caption(comment).send().await {
+        if let Err(err) = bot.send_photo(target.clone(), file).caption(comment).send().await {
             eprintln!("Failed to send document to {}: {:?}", target, err);
             return;
         }
